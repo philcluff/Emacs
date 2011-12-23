@@ -63,3 +63,6 @@
 
 ;; Comment Region on C-c c
 (global-set-key (kbd "C-c c") 'comment-region)
+
+;; Map other-window to C-o
+(global-set-key (kbd "C-o") 'other-window)
