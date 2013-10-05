@@ -1,24 +1,8 @@
-;; Default load cperl-mode
+;; Default load cperl-mode rather than perl-mode
 (defalias 'perl-mode 'cperl-mode)
 
 ;; Set smooth scrolling on the terminal
 (setq scroll-step 1) 
-
-;; Add the plugins directory into the load path
-(setq load-path (cons "/home/philc/.emacs_plugins" load-path))
-
-;; cc-mode (Needed to load in php-mode)
-(require 'cc-mode)
-
-;; php-mode
-(require 'php-mode)
-
-;; yaml-mode
-(require 'yaml-mode)
-
-;; Auto switch on yaml-mode for yaml files, and the same for php
-(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
 
 ;; Don't show the splash screen when you feed in a file. Do so otherwise.
 (when (> (length command-line-args) 1) 
