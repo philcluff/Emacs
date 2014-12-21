@@ -1,11 +1,9 @@
 .Emacs
 =====
 
-My .emacs file and my .emacs_plugins folder.
-Contains a copy of YAML mode distributed under GPL V2.
+My .emacs file
 
-
-Istalling
+Istalling.
 =========
 
     git clone https://github.com/GeneticGenesis/Emacs.git ~/.emacs.philc
